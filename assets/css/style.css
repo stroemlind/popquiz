@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;900&display=swap');
+
+body {
+    font-family: 'Orbiton', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Audiowide', cursive;
+}
