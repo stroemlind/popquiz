@@ -68,7 +68,7 @@ img {
     border: solid 8px #fff;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 60%;
+    width: 80%;
     margin: 50px;
     display: flex;
 }
