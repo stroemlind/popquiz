@@ -78,6 +78,7 @@ img {
     color: #fff;
     margin-bottom: 0;
     padding-top: 20px;
+    overflow: auto;
 }
 
 .game-rules h2 {
@@ -123,6 +124,7 @@ form .username {
 }
 
 /* Footer */
+
 footer i {
     font-size: 30px;
     color: #fff;
