@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Orbiton', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     background-image: linear-gradient(to right top, #dcabff, #cea7ff, #bea4fe, #aea0fd, #9c9dfc, #7fa7ff, #61b0ff, #42b8ff, #0ecbff, #00ddff, #2feefe, #5ffdf5);
 }
 
@@ -24,6 +24,13 @@ p {
 
 img {
     width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 /* Header */
@@ -48,9 +55,45 @@ img {
     color: rgb(140, 255, 198);
 }
 
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*height: 100%;*/
+/* Introduction to game section */
+.intro-game .flex{
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+
+.game-rules {
+    border: solid 8px #fff;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 50px;
+}
+
+.game-rules h1 {
+    font-size: 120px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+
+.game-rules h2 {
+    text-align: center;
+    color: #fff; 
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.game-rules p {
+    text-align: center;
+    margin: 10px 40px;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.username-form {
+    flex-direction: column;
 }
