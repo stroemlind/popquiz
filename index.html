@@ -7,29 +7,43 @@
     <meta name="description" content="Quiz game about pop music for anyone curiouse about music">
     <meta name="keywords" content="quiz, game, pop music">
 
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link to stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>POP Quiz!</title>   
 </head>
 <body>
+    <!-- Header -->
     <header>
+        <div class="nav">
+            <div class="container">
+                <a href="index.html">
+                    <i class="fas fa-compact-disc"></i>
+                </a>
+            </div>
+        </div>
     </header>
-    <section>
-        <div>
+    <!-- Game Introduction -->
+    <section class="intro-game">
+        <div class="game-rules">
             <h1>POP!</h1>
             <h2>A quiz about pop music</h2>
             <p>The quiz contains 10 questions. You will get the option to choose between 3 alternatives to the question asked. When you have chosen your answer, click "Submit" to get your score.
                 Let's start by creating a username!</p>
         </div>
         <div>
-            <input type="text">
+            <input type="text" name="username" placeholder="Enter username">
             <input type="button" value="submit">
         </div>
     </section>
     <footer>
         <p>For all the music lovers out there!</p>
-        <img src="" alt="">
+        <i></i>
     </footer>
+    <!-- Link to JavaScript -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
