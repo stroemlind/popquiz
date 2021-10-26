@@ -104,6 +104,7 @@ form .username {
     border: none;
     font-size: 25px;
     padding: 5px 0;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .btn {
@@ -114,10 +115,11 @@ form .username {
     color: #fff;
     padding: 10px;
     margin: 20px auto;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .btn:hover {
-    background-color: #0ecbff;
+    background-color: #0effd7;
 }
 
 /* Footer */
@@ -130,4 +132,5 @@ footer i {
 
 footer p {
     margin: 10px;
+    color: #fff;
 }
