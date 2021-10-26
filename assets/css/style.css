@@ -73,7 +73,7 @@ img {
 }
 
 .game-rules h1 {
-    font-size: 120px;
+    font-size: 150px;
     text-align: center;
     color: #fff;
     margin-bottom: 0;
@@ -94,6 +94,28 @@ img {
     line-height: 1.4;
 }
 
-.username-form {
+.username-form .flex{
     flex-direction: column;
+    align-items: center;
+}
+
+form .username {
+    margin: 10px;
+    border: none;
+    font-size: 25px;
+    padding: 5px 0;
+}
+
+.btn {
+    font-size: 20px;
+    text-align: center;
+    background-color: #9c9dfc;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.btn:hover {
+    background-color: #0ecbff;
 }
