@@ -70,6 +70,7 @@ img {
     justify-content: space-evenly;
     width: 60%;
     margin: 50px;
+    display: flex;
 }
 
 .game-rules h1 {
@@ -90,9 +91,10 @@ img {
 
 .game-rules p {
     text-align: center;
-    margin: 10px 40px;
+    margin: 10px auto;
     color: #fff;
     line-height: 1.4;
+    padding: 0 30px;
 }
 
 /* Form for username */
@@ -109,10 +111,11 @@ form {
 form .username {
     margin: 10px auto;
     border: none;
-    font-size: 25px;
     padding: 5px 0;
     font-family: 'Orbitron', sans-serif;
     display: flex;
+    width: 70%;
+    height: 40px;
 }
 
 .btn {
@@ -133,6 +136,10 @@ form .username {
 
 /* Footer */
 
+footer {
+    margin-top: auto;
+}
+
 footer i {
     font-size: 30px;
     color: #fff;
@@ -143,4 +150,44 @@ footer i {
 footer p {
     margin: 10px;
     color: #fff;
+}
+
+/* Media queries*/
+/* For media screens with a max-width of 750px */
+
+@media screen and (max-width: 750px) {
+    
+    .game-rules {
+        width: 80%;
+    }
+
+    .game-rules h1 {
+        font-size: 100px;
+    }
+}
+
+/* For media screens with a max-width of 500px */
+
+@media screen and (max-width: 500px) {
+
+    .game-rules {
+        width: 80%;
+    }
+
+    .game-rules h1 {
+        font-size: 80px;
+    }
+}
+
+/* For media screens with a max-width of 400px */
+
+@media screen and (max-width: 400px) {
+
+    .game-rules {
+        width: 90%;
+    }
+
+    .game-rules h1 {
+        font-size: 60px;
+    }
 }
