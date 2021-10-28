@@ -39,3 +39,8 @@ document.getElementsByClassName('username').addEventListener('keydown', function
         GoQuiz();
     }
 });
+
+/**The structure for the quiz
+ * the question, score keeping 
+ */
+
