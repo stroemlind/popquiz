@@ -152,7 +152,21 @@ footer p {
 }
 
 /* Quiz style */
-#control {
+
+.quiz-body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-card {
+    width: 800px;
+    max-width: 80%;
+    padding: 10px;
+}
+
+#control-buttons {
     display: flex;
 }
 
