@@ -4,6 +4,8 @@
 
 let buttonStartGame = document.getElementById('showtime-btn');
 let startButton = document.getElementById('start-button');
+let nextButton = document.getElementById('submitQuiz');
+let quizDone = document.getElementById('done')
 let quizDiv = document.getElementById('quiz');
 let questionDiv = document.getElementById('question');
 let answerButtons = document.getElementById('answer');
@@ -94,24 +96,41 @@ let randomNumber;
 ];
 
 startButton.addEventListener('click', goGame);
+nextButton.addEventListener('click', goGame);
 
 
 //The quiz game function
-function goGame() {
-    console.log('started')
+
+function pickQuestion() {
+
     //Show a random question everytime the quiz starts
-    randomNumber = Math.floor(Math.random() * 10);
+    randomNumber = Math.floor(Math.random() * quizQuestion.length);
+
     document.getElementById('question').innerHTML = quizQuestion[randomNumber].question;
     document.getElementById('a1').innerText = quizQuestion[randomNumber].answers[0].text;
     document.getElementById('a2').innerText = quizQuestion[randomNumber].answers[1].text;
     document.getElementById('a3').innerText = quizQuestion[randomNumber].answers[2].text;
-    console.log('First')
+    
+    console.log('First');
+
+    //Add and remove hide class from buttons
     startButton.classList.add('hide');
     submitQuiz.classList.remove('hide');
 
-    currentQuestionIndex = 0;
-    setNextQuestion();
+    usedQuestions.push(quizQuestion[randomNumber]);
+    quizQuestion.splice(randomNumber, 1)
+
+    if(usedQuestion.length == 10){
+        //Here we are done
+        quizDone.classList.remove('hide');
+    }
 }
+
+function goGame() {
+    console.log('started');
+    pickQuestion();
+}
+
 
 
 
