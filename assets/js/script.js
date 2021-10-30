@@ -96,7 +96,10 @@ let randomNumber;
 ];
 
 startButton.addEventListener('click', goGame);
-nextButton.addEventListener('click', goGame);
+nextButton.addEventListener('click', () => {
+    quizQuestion++
+
+});
 
 
 //The quiz game function
@@ -119,10 +122,13 @@ function pickQuestion() {
 
     usedQuestions.push(quizQuestion[randomNumber]);
     quizQuestion.splice(randomNumber, 1)
+    
 
-    if(usedQuestion.length == 10){
+    if(usedQuestion.length > quizQuestion.question +1){
         //Here we are done
-        quizDone.classList.remove('hide');
+        nextButton.classList.remove('hide')
+    } else {
+        quizDone.classList.remove('hide')
     }
 }
 
