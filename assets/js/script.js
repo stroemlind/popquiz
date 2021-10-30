@@ -106,6 +106,8 @@ function goGame() {
     document.getElementById('a2').innerText = quizQuestion[randomNumber].answers[1].text;
     document.getElementById('a3').innerText = quizQuestion[randomNumber].answers[2].text;
     console.log('First')
+    startButton.classList.add('hide');
+    submitQuiz.classList.remove('hide');
 
     currentQuestionIndex = 0;
     setNextQuestion();
@@ -122,10 +124,12 @@ function setNextQuestion() {
 //Showing the question
 function viewQuestion(question) {
     questionDiv.innerText = question.question
+ 
     question.answers.forEach(answer => {
         let button = document.createElement('button')
         button.innerText = answer.text
         button.classList.add('btn')
+
         if (answer.correct) {
             button.dataset.correct = answer.correct
         }
