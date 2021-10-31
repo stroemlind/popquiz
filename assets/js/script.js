@@ -147,11 +147,7 @@ let usedQuestions = [];
 ];
 
 startButton.addEventListener('click', goGame);
-nextButton.addEventListener('click', () => {
-    quizQuestion++
-
-});
-
+nextButton.addEventListener('click', checkAnswer);
 
 //The quiz game function
 
@@ -163,7 +159,6 @@ function pickQuestion() {
         endGame();
     }
 
-
     //Show a random question everytime the quiz starts
     randomNumber = Math.floor(Math.random() * quizQuestion.length);
 
@@ -174,19 +169,35 @@ function pickQuestion() {
     
     console.log('First');
 
-    document.getElementById('question').innerHTML = quizQuestion.querySelectorAll('.answers');
-
-
     usedQuestions.push(quizQuestion[randomNumber]);
     quizQuestion.splice(randomNumber, 1)
     
+}
 
-    if(usedQuestion.length > quizQuestion.question +1){
-        //Here we are done
-        nextButton.classList.remove('hide')
-    } else {
-        quizDone.classList.remove('hide')
+function checkAnswer() {
+    let answer = document.getElementsByName('answer');
+    for(let i = 0; i < answer.length; i++) {
+        if(answer[i].checked) {
+            if(quizCopy[randomNumber].answers[i].correct) {
+                incrementScore();
+            } else {
+                wrongScore();
+            }
+        }
     }
+    pickQuestion();
+}
+
+function incrementScore() {
+
+    let oldScore = parseInt(document.getElementById("correct").innerText);
+    document.getElementById("correct").innerText = ++oldScore;
+}
+
+function wrongScore() {
+
+    let oldScore = parseInt(document.getElementById("wrong").innerText);
+    document.getElementById("wrong").innerText = ++oldScore;
 }
 
 function goGame() {
@@ -194,9 +205,6 @@ function goGame() {
     startButton.classList.add('hide');
     pickQuestion();
 }
-
-
-
 
 
 //Setting the next question
