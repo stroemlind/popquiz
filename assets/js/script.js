@@ -59,6 +59,7 @@ let controlButtons = document.getElementById('control-btns');
 let quizDiv = document.getElementById('quiz');
 let questionDiv = document.getElementById('question');
 let answerButtons = document.getElementById('answer');
+let trackScore = document.getElementById('score-tracking');
 let resultDiv = document.getElementById('result');
 let randomNumber;
 let usedQuestions = [];
@@ -216,10 +217,11 @@ function endGame() {
     answerButtons.classList.add('hide');
     controlButtons.classList.add('hide');
     resultDiv.classList.remove('hide');
+    trackScore.classList.add('hide');
 
     let yourResult = document.getElementById('your-score');
 
-    yourResult.innerText = `is `+ parseInt(document.getElementById('correct').innerText);
+    yourResult.innerText = `is a total of `+ parseInt(document.getElementById('correct').innerText) + ` correct answers`;
 }
 
 function goGame() {
