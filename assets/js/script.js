@@ -54,11 +54,12 @@ let usernameInput = document.getElementsByClassName('username');
 let buttonStartGame = document.getElementById('showtime-btn');
 let startButton = document.getElementById('start-button');
 let nextButton = document.getElementById('submitQuiz');
-let submiButton = document.getElementById('done');
-let quizDone = document.getElementById('done')
+let submitButton = document.getElementById('done');
+let controlButtons = document.getElementById('control-btns');
 let quizDiv = document.getElementById('quiz');
 let questionDiv = document.getElementById('question');
 let answerButtons = document.getElementById('answer');
+let resultDiv = document.getElementById('result');
 let randomNumber;
 let usedQuestions = [];
 
@@ -150,35 +151,38 @@ let quizCopy = quizQuestion.slice();
 
 startButton.addEventListener('click', goGame);
 nextButton.addEventListener('click', checkAnswer);
+submitButton.addEventListener('click', checkAnswer);
 
 //The quiz game function
 
 function pickQuestion() {
 
     if(quizQuestion.length == 1) {
-        submitQuiz.classList.remove('hide');
+        submitButton.classList.remove('hide');
+        nextButton.classList.add('hide');
     } else if(quizQuestion.length == 0) {
         endGame();
     }
 
     //Show a random question everytime the quiz starts
-    randomNumber = Math.floor(Math.random() * quizQuestion.length);
+    if(quizQuestion.length !== 0) {
+        randomNumber = Math.floor(Math.random() * quizQuestion.length);
 
-    document.getElementById('question').innerHTML = quizQuestion[randomNumber].question;
-    document.getElementById('a1').innerText = quizQuestion[randomNumber].answers[0].text;
-    document.getElementById('a2').innerText = quizQuestion[randomNumber].answers[1].text;
-    document.getElementById('a3').innerText = quizQuestion[randomNumber].answers[2].text;
+        document.getElementById('question').innerHTML = quizQuestion[randomNumber].question;
+        document.getElementById('a1').innerText = quizQuestion[randomNumber].answers[0].text;
+        document.getElementById('a2').innerText = quizQuestion[randomNumber].answers[1].text;
+        document.getElementById('a3').innerText = quizQuestion[randomNumber].answers[2].text;
     
-    console.log('First');
+        console.log('First');
 
-    usedQuestions.push(quizQuestion[randomNumber]);
-    quizQuestion.splice(randomNumber, 1);
+        usedQuestions.push(quizQuestion[randomNumber]);
+        quizQuestion.splice(randomNumber, 1);
+    }
     
 }
 
 function checkAnswer() {
     let answer = document.getElementsByName('answer');
-    //quizCopy.splice(randomNumber, 1);
     for(let i = 0; i < answer.length; i++) {
         if(answer[i].checked) {
             if(quizCopy[randomNumber].answers[i].correct) {
@@ -206,31 +210,18 @@ function wrongScore() {
     pickQuestion();
 }
 
+function endGame() {
+    quizDiv.classList.add('hide');
+    questionDiv.classList.add('hide');
+    answerButtons.classList.add('hide');
+    controlButtons.classList.add('hide');
+    resultDiv.classList.remove('hide');
+}
+
 function goGame() {
     console.log('started');
+    answerButtons.classList.remove('hide');
     startButton.classList.add('hide');
     nextButton.classList.remove('hide');
     pickQuestion();
-}
-
-
-//Setting the next question
-function setNextQuestion() {
-    viewQuestion(randomQuestion[currentQuestionIndex]);
-}
-
-//Showing the question
-function viewQuestion(question) {
-    questionDiv.innerText = question.question
- 
-    question.answers.forEach(answer => {
-        let button = document.createElement('button')
-        button.innerText = answer.text
-        button.classList.add('btn')
-
-        if (answer.correct) {
-            button.dataset.correct = answer.correct
-        }
-        button.addEventListener('click', selectAnswer)
-    });
 }
