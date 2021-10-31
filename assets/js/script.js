@@ -3,17 +3,23 @@
  * and starts the game
  */
 
- let form = document.getElementsByClassName('username-form');
+let form = document.getElementsByClassName('username-form');
+let usernameInput = document.getElementsByClassName('username');
+
  form.addEventListener('submit', handleSubmit);
  
  function handleSubmit(event) {
      event.preventDefault();
  
-     let username = [];
+     let username = usernameInput.username.value;
  
-     for (let name in username) {
+     /*for (let name in username) {
          name = document.getElementsByClassName('username').value;
          username.push(name);
+     }*/
+
+     if(username === 'user') {
+
      }
  
      form.submit();
@@ -48,11 +54,13 @@
 let buttonStartGame = document.getElementById('showtime-btn');
 let startButton = document.getElementById('start-button');
 let nextButton = document.getElementById('submitQuiz');
+let submiButton = document.getElementById('done');
 let quizDone = document.getElementById('done')
 let quizDiv = document.getElementById('quiz');
 let questionDiv = document.getElementById('question');
 let answerButtons = document.getElementById('answer');
 let randomNumber;
+let usedQuestions = [];
 
  //The question for the quiz
  let quizQuestion = [
@@ -149,6 +157,13 @@ nextButton.addEventListener('click', () => {
 
 function pickQuestion() {
 
+    if(quizQuestion.length == 1) {
+        submitQuiz.classList.remove('hide');
+    } else if(quizQuestion.length == 0) {
+        endGame();
+    }
+
+
     //Show a random question everytime the quiz starts
     randomNumber = Math.floor(Math.random() * quizQuestion.length);
 
@@ -161,11 +176,6 @@ function pickQuestion() {
 
     document.getElementById('question').innerHTML = quizQuestion.querySelectorAll('.answers');
 
-
-
-    //Add and remove hide class from buttons
-    startButton.classList.add('hide');
-    submitQuiz.classList.remove('hide');
 
     usedQuestions.push(quizQuestion[randomNumber]);
     quizQuestion.splice(randomNumber, 1)
@@ -181,6 +191,7 @@ function pickQuestion() {
 
 function goGame() {
     console.log('started');
+    startButton.classList.add('hide');
     pickQuestion();
 }
 
