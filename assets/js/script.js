@@ -3,7 +3,7 @@
  * and starts the game
  */
 
-let form = document.getElementsByClassName('username-form');
+/*let form = document.getElementsByClassName('username-form');
 let usernameInput = document.getElementsByClassName('username');
 
  form.addEventListener('submit', handleSubmit);
@@ -16,7 +16,7 @@ let usernameInput = document.getElementsByClassName('username');
      /*for (let name in username) {
          name = document.getElementsByClassName('username').value;
          username.push(name);
-     }*/
+     }
 
      if(username === 'user') {
 
@@ -44,7 +44,7 @@ let usernameInput = document.getElementsByClassName('username');
      if (event.key === 'Enter') {
          form.submit();
      }
- });
+ });*/
  
 
 /**The structure for the quiz
@@ -146,6 +146,8 @@ let usedQuestions = [];
     }
 ];
 
+let quizCopy = quizQuestion.slice();
+
 startButton.addEventListener('click', goGame);
 nextButton.addEventListener('click', checkAnswer);
 
@@ -170,39 +172,44 @@ function pickQuestion() {
     console.log('First');
 
     usedQuestions.push(quizQuestion[randomNumber]);
-    quizQuestion.splice(randomNumber, 1)
+    quizQuestion.splice(randomNumber, 1);
     
 }
 
 function checkAnswer() {
     let answer = document.getElementsByName('answer');
+    //quizCopy.splice(randomNumber, 1);
     for(let i = 0; i < answer.length; i++) {
         if(answer[i].checked) {
             if(quizCopy[randomNumber].answers[i].correct) {
+                quizCopy.splice(randomNumber, 1);
                 incrementScore();
             } else {
+                quizCopy.splice(randomNumber, 1);
                 wrongScore();
             }
         }
     }
-    pickQuestion();
 }
 
 function incrementScore() {
 
     let oldScore = parseInt(document.getElementById("correct").innerText);
     document.getElementById("correct").innerText = ++oldScore;
+    pickQuestion();
 }
 
 function wrongScore() {
 
     let oldScore = parseInt(document.getElementById("wrong").innerText);
     document.getElementById("wrong").innerText = ++oldScore;
+    pickQuestion();
 }
 
 function goGame() {
     console.log('started');
     startButton.classList.add('hide');
+    nextButton.classList.remove('hide');
     pickQuestion();
 }
 
