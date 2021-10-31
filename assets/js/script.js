@@ -198,15 +198,15 @@ function checkAnswer() {
 
 function incrementScore() {
 
-    let oldScore = parseInt(document.getElementById("correct").innerText);
-    document.getElementById("correct").innerText = ++oldScore;
+    let oldScore = parseInt(document.getElementById('correct').innerText);
+    document.getElementById('correct').innerText = ++oldScore;
     pickQuestion();
 }
 
 function wrongScore() {
 
-    let oldScore = parseInt(document.getElementById("wrong").innerText);
-    document.getElementById("wrong").innerText = ++oldScore;
+    let oldScore = parseInt(document.getElementById('wrong').innerText);
+    document.getElementById('wrong').innerText = ++oldScore;
     pickQuestion();
 }
 
@@ -216,6 +216,10 @@ function endGame() {
     answerButtons.classList.add('hide');
     controlButtons.classList.add('hide');
     resultDiv.classList.remove('hide');
+
+    let yourResult = document.getElementById('your-score');
+
+    yourResult.innerText = `is `+ parseInt(document.getElementById('correct').innerText);
 }
 
 function goGame() {
