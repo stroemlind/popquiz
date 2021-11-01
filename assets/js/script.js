@@ -54,6 +54,7 @@ let usernameInput = document.getElementsByClassName('username');
  * showing final result
  */
 
+//Getting elements from the game.html file
 let buttonStartGame = document.getElementById('showtime-btn');
 let startButton = document.getElementById('start-button');
 let nextButton = document.getElementById('submitQuiz');
@@ -64,6 +65,7 @@ let questionDiv = document.getElementById('question');
 let answerButtons = document.getElementById('answer');
 let trackScore = document.getElementById('score-tracking');
 let resultDiv = document.getElementById('result');
+let resetButton = document.getElementById('reset');
 let randomNumber;
 let usedQuestions = [];
 
@@ -153,12 +155,17 @@ let usedQuestions = [];
 
 let quizCopy = quizQuestion.slice();
 
+
+//Game buttons calling event
+
 startButton.addEventListener('click', goGame);
 nextButton.addEventListener('click', checkAnswer);
 submitButton.addEventListener('click', checkAnswer);
+resetButton.addEventListener('click', reset);
 
-//The quiz game function
+//The quiz game functions
 
+//Picks a random question everytime someone starts the game
 function pickQuestion() {
 
     if(quizQuestion.length == 1) {
@@ -185,6 +192,7 @@ function pickQuestion() {
     
 }
 
+//Checks if the answer is correct or incorrect
 function checkAnswer() {
     let answer = document.getElementsByName('answer');
     for(let i = 0; i < answer.length; i++) {
@@ -200,33 +208,43 @@ function checkAnswer() {
     }
 }
 
+//Score tracking 
 function incrementScore() {
-
     let oldScore = parseInt(document.getElementById('correct').innerText);
     document.getElementById('correct').innerText = ++oldScore;
     pickQuestion();
 }
 
 function wrongScore() {
-
     let oldScore = parseInt(document.getElementById('wrong').innerText);
     document.getElementById('wrong').innerText = ++oldScore;
     pickQuestion();
 }
 
+//When all questions has been answered 
 function endGame() {
+    //Add and remove class hide to only show user result
     quizDiv.classList.add('hide');
     questionDiv.classList.add('hide');
     answerButtons.classList.add('hide');
     controlButtons.classList.add('hide');
     resultDiv.classList.remove('hide');
-    trackScore.classList.add('hide');
 
+    //Get the users correct answered score and show with username
     let yourResult = document.getElementById('your-score');
 
     yourResult.innerText = `is a total of `+ parseInt(document.getElementById('correct').innerText) + ` correct answers`;
+
+    console.log('result');
+
 }
 
+//Reset to a new game
+function reset() {
+    location.reload();
+}
+
+//Starts the game
 function goGame() {
     console.log('started');
     answerButtons.classList.remove('hide');
