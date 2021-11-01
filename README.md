@@ -49,11 +49,31 @@ Pop! is at the moment a 10 question quiz, where the user gets the option to choo
 Before starting the quiz, the user will have to enter a username. After finishing the quiz, the user will get their username and the total score of correct answers shown.
 The website also allows users to follow their Spotify playlist to get in the right mood and a social media account on Instagram, located in its footer.
 
+#### Username Form 
+#### Start Button for the quiz to show 
+#### Question Section with options 
+#### Scoretracking 
+#### Result Section 
+#### Button to reset the game 
+#### Social Media Icons in the Footer
+
 ### Features Left to Implement
 * A scoreboard to show players with the highest score of the quiz. 
-* Setting option to choose the degree of difficulty.
+* The user would get the option to choose the degree of difficulty of the quiz, like easy, medium, pro.
 
-## Technologies Used (explain various tech used, such as HTML, CSS, Balsamiq, TinyPNG, Gitpod, GitHub, Git, etc.)
+## Technologies Used
+* HTML
+* CSS 
+* JavaScript 
+* Canva 
+* Gitpod 
+* GitHub
+* Git 
+* DevTools
+* Google Fonts 
+* Font Awsome 
+
+
 ## Testing
 ### Code Validation
 ### Browser Compatibility
