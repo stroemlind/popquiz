@@ -3,31 +3,32 @@
  * and starts the game
  */
 
-/*let form = document.getElementsByClassName('username-form');
-let usernameInput = document.getElementsByClassName('username');
+let form = document.getElementById('form');
+let username = document.getElementsByClassName('username');
+let buttonStartGame = document.getElementById('showtime-btn');
+let usernameList = [];
 
- form.addEventListener('submit', handleSubmit);
- 
- function handleSubmit(event) {
-     event.preventDefault();
- 
-     let username = usernameInput.username.value;
- 
-     /*for (let name in username) {
-         name = document.getElementsByClassName('username').value;
-         username.push(name);
-     }
+//buttonStartGame.addEventListener('submit', handleSubmit);
 
-     if(username === 'user') {
+function handleSubmit(event) {
+    event.preventDefault();
 
-     }
+    usernameList.push(form.elements['username'].value);
+    form.submit();
+    console.log(usernameList);
+    
+    /*let name = username.elements['username'].value;
+    if (name +1 === usernameList.length) {
+        usernameList.push(name);
+        form.submit();
+        console.log(usernameList);
+    }*/
+    
+
+    localStorage.setItem();
+}
  
-     form.submit();
- 
-     console.log(username);
- }
- 
- //When submit button clicked, take user to the game 
+ /*//When submit button clicked, take user to the game 
  // When the user click the button to submit username and start the quiz
  let buttons = document.getElementsByTagName('button');
  
@@ -55,7 +56,6 @@ let usernameInput = document.getElementsByClassName('username');
  */
 
 //Getting elements from the game.html file
-let buttonStartGame = document.getElementById('showtime-btn');
 let startButton = document.getElementById('start-button');
 let nextButton = document.getElementById('submitQuiz');
 let submitButton = document.getElementById('done');
