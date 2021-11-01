@@ -164,6 +164,8 @@ footer p {
     width: 800px;
     max-width: 80%;
     padding: 10px;
+    background-color: #fff;
+    box-shadow: 10px 10px 30px 0px;
 }
 
 #control-buttons {
@@ -181,8 +183,69 @@ footer p {
     text-align: center;
 }
 
-.answers lable {
-    display: block;
+#answers {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+    width: 100%;
+}
+
+#a1, #a2, #a3 {
+    font-size: 20px;
+    margin: 10px;
+    display: grid;
+    /*grid-template-columns: 3;*/
+    grid-gap: 0.5em;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: grid;
+    /*grid-template-columns: 3;*/
+    justify-content: space-around;
+    align-content: space-around;
+    color: black;
+    margin: 10px 0 10px 10px;
+}
+
+/* Style for the scoretracking system */
+#score-tracking {
+    width: 60%;
+    margin: 5px auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.score {
+    flex-direction: row;
+}
+
+#correct, #wrong {
+    margin: 5px;
+    font-weight: bold;
+}
+
+/* Style for the Result display*/
+#result {
+    width: 100%;
+}
+
+#result h2 {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+#your-score {
+    margin: 10px auto;
+    text-align: center;
 }
 
 .hide {
@@ -224,6 +287,10 @@ footer p {
     }
 
     .game-rules h1 {
+        font-size: 60px;
+    }
+
+    #result h2 {
         font-size: 60px;
     }
 }

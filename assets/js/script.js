@@ -47,8 +47,11 @@ let usernameInput = document.getElementsByClassName('username');
  });*/
  
 
-/**The structure for the quiz
- * the question, score keeping 
+/**The structure for the quiz with
+ * the question, 
+ * game functions, 
+ * score keeping and
+ * showing final result
  */
 
 let buttonStartGame = document.getElementById('showtime-btn');
