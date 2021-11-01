@@ -3,8 +3,8 @@ Pop! is a quiz for anyone who wants to try their knowledge in pop music. How wel
 -amiresponisive image
 
 ## User Stories
-* Scoretracking system 
 * Create a username
+* Scoretracking system
 * Get feedback about the result after the quiz is done
 * Relevent Social Media Icons
 
@@ -62,17 +62,16 @@ The website also allows users to follow their Spotify playlist to get in the rig
 * The user would get the option to choose the degree of difficulty of the quiz, like easy, medium, pro.
 
 ## Technologies Used
-* HTML
-* CSS 
-* JavaScript 
-* Canva 
-* Gitpod 
-* GitHub
-* Git 
-* DevTools
-* Google Fonts 
-* Font Awsome 
-
+These are the following technologies used to develop this project: 
+* HTML: HTML5 are used to build the core structure of the website
+* CSS: CSS is used to style the website with colors, fonts, placement of elements, etc.
+* JavaScript: JavaScript are used to make the website more interactive for the user
+* Canva: Canva is a web application used to create the wireframes for this project
+* Gitpod: Gitpod is the development environment used for developing all the code during this project
+* GitHub: GitHub are used to store the repository for this project and GitHub pages to deploy the website
+* Git: Git is used to create backups of the project and ensure that all versions of the project is pushed to GitHub 
+* DevTools:
+* Auto Prefixer:
 
 ## Testing
 ### Code Validation
