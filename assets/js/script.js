@@ -5,30 +5,31 @@
  * and starts the game
  */
 
-/*let form = document.getElementById('form');
-let buttonStartGame = document.getElementById('showtime-btn');
-let usernameList = [];
+let form = document.getElementById('username');
 
-buttonStartGame.addEventListener('submit', handleSubmit);
+let usernameList = JSON.parse(localStorage.getItem('usernameList')) || [];
 
-function handleSubmit(event) {
+form.addEventListener('submit', addUser);
+
+function addUser(e) {
     event.preventDefault();
 
-    let username = docuemnt.getElementById('username').value;
-        
-    if(usernameList.includes(username)) {
-            alert(`Please choose a username`);
-    } else {
-            usernameList.push(username);
-            form.submit();
-            console.log(usernameList);
+    let text = (this.element('[name=user]')).value;
+    let user = {
+        text
     }
 
-
-    localStorage.setItem();
+    usernameList.push(user);
+    this.reset();
 }
 
-console.log(usernameList);*/
+function populateList(users = [], form) {
+    users.map((name, i) => {
+        return;
+    }).join('');
+
+    localStorage.setItem('usernameList', JSON.stringify(users));
+}
  
  /*//When submit button clicked, take user to the game 
  // When the user click the button to submit username and start the quiz
@@ -72,6 +73,12 @@ let randomNumber;
 let usedQuestions = [];
 
 answerButtons.classList.add('hide');
+
+/*if (location.href === "game.html") {
+    all the game functionality;
+} else {
+    all the index functionality;
+}*/
 
 let quizCopy = quizQuestion.slice();
 

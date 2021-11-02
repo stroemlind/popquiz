@@ -81,20 +81,24 @@ img {
     margin-bottom: 0;
     padding-top: 20px;
     overflow: auto;
+    text-shadow: 3px 4px 6px #000;
 }
 
 .game-rules h2 {
     text-align: center; 
     margin-top: 0;
     font-size: 20px;
+    text-shadow: 1px 2px 3px #000;
+    letter-spacing: 1px;
 }
 
 .game-rules p {
     text-align: center;
     margin: 10px auto;
-    color: #fff;
+    color: #000;
     line-height: 1.4;
     padding: 0 30px;
+    letter-spacing: 1px;
 }
 
 /* Form for username */
@@ -180,16 +184,16 @@ footer p {
 
 .btn-start {
     font-size: 40px;
-    border: 1px solid black;
+    border: 1px solid #000;
 }
 
 #quiz {
     background-color: #fff;
-    color: black;
+    color: #000;
 }
 
 #question {
-    color: black;
+    color: #000;
     font-size: 30px;
     text-align: center;
 }
@@ -219,7 +223,7 @@ input[type="radio"] {
     align-self: center;
     justify-content: space-around;
     align-content: space-around;
-    color: black;
+    color: #000;
     margin: 10px 0 10px 10px;
 }
 
@@ -248,7 +252,7 @@ input[type="radio"] {
 }
 
 #result h2 {
-    color: black;
+    color: #000;
     text-align: center;
     font-weight: bold;
     font-size: 80px;
