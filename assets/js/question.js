@@ -81,5 +81,53 @@
             {text: '1993', correct: true},
             {text: '1996', correct: false}
         ],
+    },
+    {
+        question: 'Which of the following songs is a song by NSYNC?',
+        answers: [
+            {text: 'Keep On Movin’ ', correct: false},
+            {text: 'My Love', correct: false},
+            {text: 'It’/s Gonna Be Me', correct: true}
+        ],
+    },
+    {
+        question: 'What year was Rihannas third studio album “Good Girl Gone Bad” relesed?',
+        answers: [
+            {text: '2006', correct: false},
+            {text: '2007', correct: true},
+            {text: '2008', correct: false}
+        ],
+    },
+    {
+        question: 'What is the name of Michael Jacksons album where you can find the songs like "Beat It" and "Billie Jean"?',
+        answers: [
+            {text: 'Thriller', correct: true},
+            {text: 'Bad', correct: false},
+            {text: 'Dangerous', correct: false}
+        ],
+    },
+    {
+        question: 'How many Grammy Awards did Bruno Mars receive for his album "24K Gold"?',
+        answers: [
+            {text: '7', correct: true},
+            {text: '9', correct: false},
+            {text: '12', correct: false}
+        ],
+    },
+    {
+        question: 'Which of the following songs did Dua Lipa win The British Music Awards “Song of the year” in 2019?',
+        answers: [
+            {text: 'New Rules', correct: false},
+            {text: "Don't Start Now", correct: false},
+            {text: 'One Kiss', correct: true}
+        ],
+    },
+    {
+        question: 'The song "Old Town Road" spent 19 weeks on the US Billboard Hot 100 chart, becoming the longest-running number-one song since the chart debuted in 1958. Who is the artist performing the song? ',
+        answers: [
+            {text: 'Beyonce', correct: false},
+            {text: 'Taylor Swift', correct: false},
+            {text: 'Lil Nas X', correct: true}
+        ],
     }
 ];
