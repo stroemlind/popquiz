@@ -5,7 +5,7 @@
  * and starts the game
  */
 
-let form = document.getElementById('username');
+/*let form = document.getElementById('username');
 
 let usernameList = JSON.parse(localStorage.getItem('usernameList')) || [];
 
@@ -29,7 +29,7 @@ function populateList(users = [], form) {
     }).join('');
 
     localStorage.setItem('usernameList', JSON.stringify(users));
-}
+}*/
  
  /*//When submit button clicked, take user to the game 
  // When the user click the button to submit username and start the quiz
@@ -103,7 +103,7 @@ function pickQuestion() {
 
     //Show a random question everytime the quiz starts
     if(quizQuestion.length !== 0) {
-        randomNumber = Math.floor(Math.random() * quizQuestion.length);
+        randomNumber = Math.floor(Math.random() * 10);
 
         document.getElementById('question').innerHTML = quizQuestion[randomNumber].question;
         document.getElementById('a1').innerText = quizQuestion[randomNumber].answers[0].text;
