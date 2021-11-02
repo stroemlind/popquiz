@@ -1,3 +1,5 @@
+ /* jshint esversion: 8 */
+ 
  //The question for the quiz
  const quizQuestion = [
     {

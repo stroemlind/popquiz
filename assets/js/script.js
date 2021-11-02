@@ -1,3 +1,5 @@
+/* jshint esversion: 8 */
+
 /**The username registration form
  * called when the user registrer their username 
  * and starts the game
