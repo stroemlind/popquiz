@@ -3,30 +3,30 @@
  * and starts the game
  */
 
-let form = document.getElementById('form');
-let username = document.getElementsByClassName('username');
+/*let form = document.getElementById('form');
 let buttonStartGame = document.getElementById('showtime-btn');
 let usernameList = [];
 
-//buttonStartGame.addEventListener('submit', handleSubmit);
+buttonStartGame.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
     event.preventDefault();
 
-    usernameList.push(form.elements['username'].value);
-    form.submit();
-    console.log(usernameList);
-    
-    /*let name = username.elements['username'].value;
-    if (name +1 === usernameList.length) {
-        usernameList.push(name);
-        form.submit();
-        console.log(usernameList);
-    }*/
-    
+    let username = docuemnt.getElementById('username').value;
+        
+    if(usernameList.includes(username)) {
+            alert(`Please choose a username`);
+    } else {
+            usernameList.push(username);
+            form.submit();
+            console.log(usernameList);
+    }
+
 
     localStorage.setItem();
 }
+
+console.log(usernameList);*/
  
  /*//When submit button clicked, take user to the game 
  // When the user click the button to submit username and start the quiz
@@ -68,6 +68,8 @@ let resultDiv = document.getElementById('result');
 let resetButton = document.getElementById('reset');
 let randomNumber;
 let usedQuestions = [];
+
+answerButtons.classList.add('hide');
 
  //The question for the quiz
  let quizQuestion = [

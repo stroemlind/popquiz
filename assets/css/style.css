@@ -200,7 +200,7 @@ footer p {
     font-size: 20px;
     margin: 10px;
     display: grid;
-    /*grid-template-columns: 3;*/
+    align-self: center;
     grid-gap: 0.5em;
     justify-content: space-around;
     align-content: space-around;
@@ -211,7 +211,7 @@ input[type="radio"] {
     height: 20px;
     position: absolute;
     display: grid;
-    /*grid-template-columns: 3;*/
+    align-self: center;
     justify-content: space-around;
     align-content: space-around;
     color: black;
