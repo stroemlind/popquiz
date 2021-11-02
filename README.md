@@ -25,13 +25,13 @@ The orange color used is to style the buttons on the website is to create a cont
 ### Typography (explain any fonts and icon libraries used, font-awesome/google fonts, etc)
 The font and icon styles have a digital-futuristic and smooth characteristic feel to them.
 * The font style for the website is from Google Fonts. 
-    * Heading elements have the font style: Audiowide.
-    * The remaining text elements have the font style: Orbitron.
+    * Heading elements have the font style: [Audiowide](https://fonts.google.com/specimen/Audiowide?query=Audio).
+    * The remaining text elements have the font style: [Orbitron](https://fonts.google.com/specimen/Orbitron?query=orbitr).
 
 * The icons in the footer and the header are from Font Awsome
-    * Disc icon in the header
-    * Spotify icon in the footer
-    * Instagram icon in the footer 
+    * [Disc](https://fontawesome.com/v5.15/icons/compact-disc?style=solid) icon in the header
+    * [Spotify](https://fontawesome.com/v5.15/icons/spotify?style=brands) icon in the footer
+    * [Instagram](https://fontawesome.com/v5.15/icons/instagram?style=brands) icon in the footer 
 
 ### Wireframes
 #### Wireframe of the landingpage
@@ -94,8 +94,28 @@ These are the following technologies used to develop this project:
 ### Tested User Stories
 ### Unfixed Bugs
 ## Deployment
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+- In the GitHub [repository](https://github.com/stroemlind/popquiz), navigate to the Settings tab.
+- From the source section drop-down menu, select the `Main` Branch.
+- Once the Main branch has been selected and saved, the page will be automatically refreshed with a detailed ribbon displayed to indicate the successful deployment.
+
+The live link can be found here - https://stroemlind.github.io/popquiz
+
 ### Local Deployment
+In order to make a local copy of this project, you can type the following into your IDE Terminal to clone this repository:
+
+- `git clone https://github.com/stroemlind/popquiz.git`
+
+Alternatively, if using Gitpod, you can [click here](https://gitpod.io/#https://github.com/stroemlind/popquiz), and it will create a brand new workspace on your own Gitpod account.
+
 ## Credits
 ### Content
+* [Canva](https://www.canva.com/) werevused to make the wireframe for this project
+* The fonts for the website are taken from [Google-fonts](https://fonts.google.com/)
+* The icons in the footer are taken from [Fontawesome](https://fontawesome.com/)
+* [Autoprefixer](https://autoprefixer.github.io/) were used for the css code
+* The [ColoSpace](https://mycolor.space/) were used to find the colors of the Website
+
 ### Media
 ### Acknowledgements
