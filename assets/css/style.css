@@ -101,11 +101,7 @@ img {
     letter-spacing: 1px;
 }
 
-/* Form for username */
-
-/*form {
-    margin-top: 30px;
-}*/
+/* Style for username form */
 
 .username-form .flex{
     flex-direction: column;
@@ -122,6 +118,8 @@ img {
     width: 70%;
     height: 40px;
 }
+
+/* Style for the buttons on the website */
 
 #showtime-btn {
     width: fit-content;
@@ -163,6 +161,7 @@ footer p {
 
 /* Quiz style */
 
+/* Overall style of the game */
 .quiz-body {
     display: flex;
     height: 100vh;
@@ -178,6 +177,7 @@ footer p {
     box-shadow: 10px 10px 30px 0px;
 }
 
+/* Buttons additional styles */
 #control-buttons {
     display: flex;
 }
@@ -187,6 +187,7 @@ footer p {
     border: 1px solid #000;
 }
 
+/* Style for the text and radio buttons */
 #quiz {
     background-color: #fff;
     color: #000;
@@ -263,9 +264,7 @@ input[type="radio"] {
     text-align: center;
 }
 
-.hide {
-    display: none;
-}
+
 /* Media queries*/
 /* For media screens with a max-width of 750px */
 
@@ -308,4 +307,8 @@ input[type="radio"] {
     #result h2 {
         font-size: 60px;
     }
+}
+
+.hide {
+    display: none;
 }
