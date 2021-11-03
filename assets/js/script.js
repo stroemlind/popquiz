@@ -93,11 +93,18 @@ resetButton.addEventListener('click', reset);
 
 //Picks a random question everytime someone starts the game
 function pickQuestion() {
+    
+    let answer = document.getElementsByName('answer');
+    for(let i = 0; i < answer.length; i++) {
+        if(answer[i].checked) {
+            answer[i].checked = false;
+        }
+    }
 
     if(quizQuestion.length == 1) {
         submitButton.classList.remove('hide');
         nextButton.classList.add('hide');
-    } else if(quizQuestion.length == 0) {
+    } else if(quizQuestion.length == 10) {
         endGame();
     }
 
