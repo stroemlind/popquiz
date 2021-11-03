@@ -5,51 +5,25 @@
  * and starts the game
  */
 
-/*let form = document.getElementById('username');
-
+let form = document.querySelector('.username-form');
 let usernameList = JSON.parse(localStorage.getItem('usernameList')) || [];
 
-form.addEventListener('submit', addUser);
-
-function addUser(e) {
+function addUser(event) {
     event.preventDefault();
 
-    let text = (this.element('[name=user]')).value;
+    let text = (this.querySelector('[name=username]')).value;
     let user = {
         text
-    }
-
+    };
+    console.log(user);
     usernameList.push(user);
+    localStorage.setItem('usernameList', JSON.stringify(usernameList));
     this.reset();
 }
 
-function populateList(users = [], form) {
-    users.map((name, i) => {
-        return;
-    }).join('');
 
-    localStorage.setItem('usernameList', JSON.stringify(users));
-}*/
- 
- /*//When submit button clicked, take user to the game 
- // When the user click the button to submit username and start the quiz
- let buttons = document.getElementsByTagName('button');
- 
- for (let button of buttons) {
-     button.addEventListener('click', function () {
-         if (this.getAttribute('data-type') === 'submit') {
-             form.submit();
-         }
-     });
- }
- 
- // When user press "Enter"-key to submit username and start the quiz
- document.getElementsByClassName('username').addEventListener('keydown', function(event) {
-     if (event.key === 'Enter') {
-         form.submit();
-     }
- });*/
- 
+
+form.addEventListener('submit', addUser);
 
 /**The structure for the quiz with
  * the question, 
@@ -94,6 +68,7 @@ resetButton.addEventListener('click', reset);
 //Picks a random question everytime someone starts the game
 function pickQuestion() {
     
+    //Unchecks radio input when going to the next question
     let answer = document.getElementsByName('answer');
     for(let i = 0; i < answer.length; i++) {
         if(answer[i].checked) {
@@ -104,7 +79,7 @@ function pickQuestion() {
     if(quizQuestion.length == 1) {
         submitButton.classList.remove('hide');
         nextButton.classList.add('hide');
-    } else if(quizQuestion.length == 10) {
+    } else if(quizQuestion.length == 0) {
         endGame();
     }
 
