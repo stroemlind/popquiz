@@ -149,7 +149,32 @@ Alternatively, if using Gitpod, you can [click here](https://gitpod.io/#https://
 * The icons in the footer are taken from [Fontawesome](https://fontawesome.com/)
 * [Autoprefixer](https://autoprefixer.github.io/) were used for the css code
 * The [ColoSpace](https://mycolor.space/) were used to find the colors of the Websites
-* The Color pallette is created from [Coloor](https://coolors.co/dcabff-8299fa-5ffdf5-da4500-350ea0) 
+* The Color pallette is created from [Coloor](https://coolors.co/dcabff-8299fa-5ffdf5-da4500-350ea0)
+* [This](https://kiranworkspace.com/how-to-stick-footer-to-bottom-of-page/) article give information about how to stick the footer to the bottom of the page when the content isn't enough to fill the whole page
+* [This]( https://developer.mozilla.org/en-US/docs/Web/API/Location/reload) article gives information about the reset game function 
+* For getting started with the game/quiz functions these sources supply information:
+    * [YouTube-video](https://www.youtube.com/watch?v=riDzcEQbX6k)
+    * [Sitepoint](https://www.sitepoint.com/simple-javascript-quiz/)
+    * [Simplestepscode](https://simplestepscode.com/javascript-quiz-tutorial/)
+* The information about localStorage was given by Tim Nelson and through his youtube clip [Wes Bos](https://www.youtube.com/watch?v=YL1F4dCUlLc)
+
+#### Questions
+* [EXO](https://en.wikipedia.org/wiki/Exo) / [Spotify](https://open.spotify.com/artist/3cjEqqelV9zb4BYE3qDQ4O?si=5djMFLjESiuD3W4UIQ7XXw)
+* [Max Martin](https://en.wikipedia.org/wiki/Max_Martin) 
+* [ABBA](https://en.wikipedia.org/wiki/ABBA) / [Spotify](https://open.spotify.com/album/1V6a99EbTTIegOhWoPxYI9?si=Sy4VwdENQ5qYvwsrbuBGUQ)
+* [Prince](https://en.wikipedia.org/wiki/Prince_(musician)) / [Spotify](https://open.spotify.com/album/7nXJ5k4XgRj5OLg9m8V3zc?si=7zNRVKVcQfqRl0wklmD38g)
+* [Harry Styles](https://en.wikipedia.org/wiki/Harry_Styles)
+* [Zara Larsson](https://en.wikipedia.org/wiki/Zara_Larsson) / [Spotify](https://open.spotify.com/album/1hUiGzO4mIUZ0yfV8XHl6Y?si=YYo6EMRhRYeOOlPDsEgWdA)
+* [A-HA](https://en.wikipedia.org/wiki/A-ha)
+* [Coldplay](https://en.wikipedia.org/wiki/Coldplay) / [Spotify](https://open.spotify.com/album/39McjovZ3M6n5SFtNmWTdp?si=miQk06OYQA65Nv7NFVCHTQ)
+* [Camila Cabello](https://en.wikipedia.org/wiki/Camila_Cabello)
+* [Backstreet Boys](https://en.wikipedia.org/wiki/Backstreet_Boys)
+* [NSYNC](https://en.wikipedia.org/wiki/NSYNC) / [Spotify](https://open.spotify.com/album/5hMd4vAfSUT1cbYCnRUako?si=Qs84n_7RTOiwQsROLQ34xw)
+* [Rihanna](https://en.wikipedia.org/wiki/Rihanna) / [Spotify](https://open.spotify.com/album/3JSWZWeTHF4HDGt5Eozdy7?si=6Jrv9NMLRrGCGkF8BaFbtg)
+* [Michael Jackson](https://en.wikipedia.org/wiki/Michael_Jackson) / [Spotify](https://open.spotify.com/album/1C2h7mLntPSeVYciMRTF4a?si=HPH7kKe1R3Crnxzv0rniWw)
+* [Bruno Mars](https://en.wikipedia.org/wiki/Bruno_Mars)
+* [Dua Lipa](https://en.wikipedia.org/wiki/Dua_Lipa)
+* [Lil Nas X](https://en.wikipedia.org/wiki/Lil_Nas_X) / [Spotify](https://open.spotify.com/album/4IRiXE5NROxknUSAUSjMoO?si=leDoY2FjQOmqajXisHqhQA)
 
 ### Media
 * The Favicons source is [Pexels](https://www.pexels.com/sv-se/foto/teknologi-musik-fargrik-rund-4734716/)
