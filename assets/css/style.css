@@ -11,6 +11,9 @@
 body {
     font-family: 'Orbitron', sans-serif;
     background-image: linear-gradient(to right top, #dcabff, #cea7ff, #bea4fe, #aea0fd, #9c9dfc, #7fa7ff, #61b0ff, #42b8ff, #0ecbff, #00ddff, #2feefe, #5ffdf5);
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+    min-height:100vh;
 }
 
 h1, h2 {
@@ -47,13 +50,13 @@ img {
 }
 
 .container i {
-    color: #fff;
+    color: #000;
     font-size: 30px;
     margin: 10px 0;
 }
 
 .container i:hover {
-    color: rgb(140, 255, 198);
+    color: #fff;
 }
 
 /* Introduction to game section */
@@ -126,10 +129,10 @@ img {
 }
 
 .btn {
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    background-color: #da4500;
-    border: 2px solid #fff;
+    background-color: #350ea0;
+    border: 3px solid #fff;
     color: #fff;
     padding: 10px;
     margin: 20px auto;
@@ -138,7 +141,7 @@ img {
 }
 
 .btn:hover {
-    background-color: #0effd7;
+    background-color: #DA4500;
 }
 
 /* Footer */
@@ -149,14 +152,14 @@ footer {
 
 footer i {
     font-size: 30px;
-    color: #fff;
+    color: #000;
     margin: 5px;
     padding: 5px;
 }
 
 footer p {
     margin: 10px;
-    color: #fff;
+    color: #000;
 }
 
 /* Quiz style */
@@ -164,17 +167,18 @@ footer p {
 /* Overall style of the game */
 .quiz-body {
     display: flex;
-    height: 100vh;
+    height: 100%;
     align-items: center;
     justify-content: center;
 }
 
 .quiz-card {
-    width: 800px;
+    width: 100%;
     max-width: 80%;
     padding: 10px;
     background-color: #fff;
     box-shadow: 10px 10px 30px 0px;
+    margin: 30px auto;
 }
 
 /* Buttons additional styles */
@@ -184,7 +188,13 @@ footer p {
 
 .btn-start {
     font-size: 40px;
-    border: 1px solid #000;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    border: none;
+}
+
+#reset {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    border: none;
 }
 
 /* Style for the text and radio buttons */
@@ -199,33 +209,25 @@ footer p {
     text-align: center;
 }
 
-#answers {
+#answer {
     flex-direction: column;
     align-items: center;
-    margin: 20px 10px;
-    width: 100%;
+    margin: 25px 10px 25px 20px;
+    padding-left: 10px;
 }
 
 #a1, #a2, #a3 {
-    font-size: 20px;
-    margin: 10px;
-    display: grid;
-    align-self: center;
-    grid-gap: 0.5em;
-    justify-content: space-around;
-    align-content: space-around;
+    font-size: 25px;
+    margin: 20px 0 20px 25px;
+    display: inherit;
 }
 
 input[type="radio"] {
     width: 20px;
     height: 20px;
     position: absolute;
-    display: grid;
-    align-self: center;
-    justify-content: space-around;
-    align-content: space-around;
-    color: #000;
-    margin: 10px 0 10px 10px;
+    display: inline-block;
+    margin-top: 6px;
 }
 
 /* Style for the scoretracking system */
@@ -297,11 +299,19 @@ input[type="radio"] {
 @media screen and (max-width: 400px) {
 
     .game-rules {
-        width: 90%;
+        width: 100%;
+        margin: 0;
+        box-shadow: 0px 1px 3px 0px;
     }
 
     .game-rules h1 {
         font-size: 60px;
+    }
+
+    .quiz-card {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
     }
 
     #result h2 {

@@ -8,15 +8,12 @@ if (location.pathname === '/' || location.pathname == '/index.html') {
 
     //Adds username to local storage 
     let form = document.querySelector('.username-form');
-    //let usernameList = JSON.parse(localStorage.getItem('usernameList')) || [];
 
     function addUser(event) {
         event.preventDefault();
 
-        //let text = (this.querySelector('[name=username]')).value;
-
         localStorage.setItem('username', this.querySelector('[name=username]').value);
-        //this.reset();
+
         window.location = '/game.html'
     }
 
