@@ -13,12 +13,16 @@ The quiz's theme is to simulate the pop trends of the late '90s and the early '0
 
 ### Colour Scheme
 The primary colors used for the website are:
-* Purple hex: #DCABFF
-* Blue hex: #8299FA 
-* Turquoise hex: #5FFDF5
-* Orange hex: #DA4500
+* Purple for Background hex: #DCABFF
+* Blue for Background hex: #8299FA 
+* Turquoise for Background hex: #5FFDF5
+* Orange for hover over Button hex: #DA4500
+* Blue for Buttons hex: #350EA0
+* Black and white for text and icons
 
-To get the proper background color gradient, I used the ColorSpace 3-color-gradient generator. The color to get this background are the purple and blue listed above. 
+![Color-palette](documentation/images/colors-popquiz.png)
+
+To get the proper background color gradient, I used the [ColorSpace](https://mycolor.space/gradient3?ori=to+right+top&hex=%23DCABFF&hex2=%238299FA&hex3=%235FFDF5&submit=submit) 3-color-gradient generator. The color to get this background are the purple and blue listed above. 
 
 The orange color used is to style the buttons on the website is to create a contrast and make it easier for the user to identify buttons. 
 
@@ -45,7 +49,7 @@ The font and icon styles have a digital-futuristic and smooth characteristic fee
 
 ## Features
 ### Existing Features
-Pop! is at the moment a 10 question quiz, where the user gets the option to choose between 3 alternatives to answer the question. 
+Pop!'s question bank holds 16 questions at the moment. When a user starts the game, the code will select ten questions at random. So every time a user begins a game, they will never be in the same order or questions. 
 Before starting the quiz, the user will have to enter a username. After finishing the quiz, the user will get their username and the total score of correct answers shown.
 The website also allows users to follow their Spotify playlist to get in the right mood and a social media account on Instagram, located in its footer.
 
@@ -84,15 +88,44 @@ These are the following technologies used to develop this project:
 * Gitpod: Gitpod is the development environment used for developing all the code during this project
 * GitHub: GitHub are used to store the repository for this project and GitHub pages to deploy the website
 * Git: Git is used to create backups of the project and ensure that all versions of the project is pushed to GitHub 
-* DevTools:
-* Auto Prefixer:
+* DevTools: Dev Tools is used to look over the development of the website, debugging problems, and try different approaches to issues that would occur during the process. 
+* Auto Prefixer: Auto Prefixer is an application used at the end of the project to give the CSS code some extra properties when used on different browsers.
 
 ## Testing
 ### Code Validation
+* HTML
+    * Validation
+
+* CSS
+    * Validation
+
+* JavaScript
+    * Validation
+
 ### Browser Compatibility
+* Chrome
+    * a
+* FireFox 
+    * b
+* Safari
+    * c
+
 ### Responsiveness
+* Desktop
+* Tablet 
+* Mobile 
+
 ### Tested User Stories
+#### Create a username
+
+#### Scoretracking system
+
+#### Get feedback about the result after the quiz is done
+
+#### Relevent Social Media Icons
+
 ### Unfixed Bugs
+
 ## Deployment
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 
@@ -115,7 +148,10 @@ Alternatively, if using Gitpod, you can [click here](https://gitpod.io/#https://
 * The fonts for the website are taken from [Google-fonts](https://fonts.google.com/)
 * The icons in the footer are taken from [Fontawesome](https://fontawesome.com/)
 * [Autoprefixer](https://autoprefixer.github.io/) were used for the css code
-* The [ColoSpace](https://mycolor.space/) were used to find the colors of the Website
+* The [ColoSpace](https://mycolor.space/) were used to find the colors of the Websites
+* The Color pallette is created from [Coloor](https://coolors.co/dcabff-8299fa-5ffdf5-da4500-350ea0) 
 
 ### Media
+* The Favicons source is [Pexels](https://www.pexels.com/sv-se/foto/teknologi-musik-fargrik-rund-4734716/)
+
 ### Acknowledgements
