@@ -128,7 +128,7 @@ if (location.pathname === '/' || location.pathname == '/index.html') {
         //Get the users correct answered score and show with username
         let yourResult = document.getElementById('your-score');
 
-        yourResult.innerText = localStorage.getItem('username') + ` has a total of ` + parseInt(document.getElementById('correct').innerText) + ` correct answers`;
+        yourResult.innerText = localStorage.getItem('username') + ` you got a total of ` + parseInt(document.getElementById('correct').innerText) + ` correct answers`;
     }
 
     //Reset to a new game
