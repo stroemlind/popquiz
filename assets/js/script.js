@@ -44,8 +44,6 @@ if (location.pathname === '/' || location.pathname == '/index.html') {
 
     let quizCopy = quizQuestion.slice();
 
-
-
     //Game buttons calling event
     startButton.addEventListener('click', goGame);
     nextButton.addEventListener('click', checkAnswer);
