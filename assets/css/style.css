@@ -311,7 +311,7 @@ input[type="radio"] {
     }
 
     .quiz-card {
-        max-width: 100%;
+        max-width: 95%;
         width: 100%;
         margin: 0 auto;
     }
