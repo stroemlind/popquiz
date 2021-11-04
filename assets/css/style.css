@@ -301,7 +301,7 @@ input[type="radio"] {
 @media screen and (max-width: 400px) {
 
     .game-rules {
-        width: 100%;
+        width: 95%;
         margin: 0;
         box-shadow: 0px 1px 3px 0px;
     }
