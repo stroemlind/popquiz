@@ -41,7 +41,7 @@ if (location.pathname === '/' || location.pathname == '/index.html') {
     let resetButton = document.getElementById('reset');
     let randomNumber;
     let usedQuestions = [];
-
+    
     let quizCopy = quizQuestion.slice();
 
     //Game buttons calling event
