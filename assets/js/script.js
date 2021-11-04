@@ -14,7 +14,7 @@ if (location.pathname === '/' || location.pathname == '/index.html') {
 
         localStorage.setItem('username', this.querySelector('[name=username]').value);
 
-        window.location = '/game.html'
+        window.location = '/game.html';
     }
 
     form.addEventListener('submit', addUser);
