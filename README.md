@@ -140,9 +140,26 @@ No errors where found when going through the offical [Jshint validator](https://
     ![Microsoft-Edge](documentation/testing/edge.png)
 
 ### Responsiveness
-* Desktop
+The responsiveness for the website works accordingly throughout the whole quiz game process. See pictures below for every step taken.
+
+* Desktop 
+![Landingpage](documentation/testing/edge.png)
+![Start-section](documentation/testing/chrome.png)
+![Question-section](documentation/testing/desktop-q.png)
+![Result-section](documentation/testing/desktop-r.png)
+
 * Tablet 
+![Landingpage](documentation/testing/explorer-tabletview-index.png)
+![Start-section](documentation/testing/explorer-tabletview-start.png)
+![Question-section](documentation/testing/explorer-tabletview-question.png)
+![Result-section](documentation/testing/explorer-tabletview-result.png)
+
 * Mobile 
+![Landingpage](documentation/testing/mobile-index.png)
+![Start-section](documentation/testing/mobile-start.png)
+![Question-section](documentation/testing/mobileview-question-firefox-top.png)
+![Question-section](documentation/testing/mobileview-question-firefox-bottom.png)
+![Result-section](documentation/testing/mobile-result.png)
 
 ### Tested User Stories
 #### Create a username
