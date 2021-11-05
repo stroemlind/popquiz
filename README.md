@@ -74,11 +74,8 @@ This button, when clicked, will reset the quiz for the user and take them to the
  
 #### Social Media icons in the footer
 The Social Media icons will take the user to the directed site and application, in this case, Instagram and a Spotify playlist when clicked.
-* Spotify 
-![Spotify](documentation/testing/spotify.png)
-
-* Instagram
-![Instagram](documentation/testing/instagram.png)
+* Footer Icons: Spotify and Instagram
+![Footer Icons](documentation/testing/icons-footer.png)
 
 ### Features Left to Implement
 * A scoreboard to show players with the highest score of the quiz. 
