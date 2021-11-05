@@ -24,7 +24,9 @@ The primary colors used for the website are:
 
 To get the proper background color gradient, I used the [ColorSpace](https://mycolor.space/gradient3?ori=to+right+top&hex=%23DCABFF&hex2=%238299FA&hex3=%235FFDF5&submit=submit) 3-color-gradient generator. The color to get this background are the purple and blue listed above. 
 
-The orange color used is to style the buttons on the website is to create a contrast and make it easier for the user to identify buttons. 
+The orange(#DA4500) and the blue(#350EA0) colors used are to style the buttons on the website. When a user hovers over a button, it changes the color to orange. By doing so, the user gets an indication if they are near a button.
+* button ![Button](documentation/images/button-noh.png) 
+* button with hover effect ![Button:hover](documentation/images/button-hover.png)
 
 ### Typography (explain any fonts and icon libraries used, font-awesome/google fonts, etc)
 The font and icon styles have a digital-futuristic and smooth characteristic feel to them.
