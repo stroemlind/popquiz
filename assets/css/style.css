@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* Basic style for the website */
 
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;900&display=swap');
@@ -5,13 +12,18 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
     font-family: 'Orbitron', sans-serif;
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#dcabff), color-stop(#cea7ff), color-stop(#bea4fe), color-stop(#aea0fd), color-stop(#9c9dfc), color-stop(#7fa7ff), color-stop(#61b0ff), color-stop(#42b8ff), color-stop(#0ecbff), color-stop(#00ddff), color-stop(#2feefe), to(#5ffdf5));
+    background-image: -o-linear-gradient(left bottom, #dcabff, #cea7ff, #bea4fe, #aea0fd, #9c9dfc, #7fa7ff, #61b0ff, #42b8ff, #0ecbff, #00ddff, #2feefe, #5ffdf5);
     background-image: linear-gradient(to right top, #dcabff, #cea7ff, #bea4fe, #aea0fd, #9c9dfc, #7fa7ff, #61b0ff, #42b8ff, #0ecbff, #00ddff, #2feefe, #5ffdf5);
+    display:-ms-grid;
     display:grid;
+    -ms-grid-rows: auto 1fr auto;
     grid-template-rows: auto 1fr auto;
     min-height:100vh;
 }
@@ -31,9 +43,15 @@ img {
 }
 
 .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100%;
 }
 
@@ -62,20 +80,33 @@ img {
 /* Introduction to game section */
 .intro-game .flex{
     width: 100%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: absolute;
     height: 100vh;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .game-rules {
     border: solid 8px #fff;
-    flex-direction: column;
-    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     width: 80%;
     margin: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    box-shadow: 10px 10px 30px 0px;
+    -webkit-box-shadow: 10px 10px 30px 0px;
+            box-shadow: 10px 10px 30px 0px;
 }
 
 .game-rules h1 {
@@ -107,8 +138,13 @@ img {
 /* Style for username form */
 
 .username-form .flex{
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 30px;
 }
 
@@ -117,6 +153,8 @@ img {
     border: none;
     padding: 5px 0;
     font-family: 'Orbitron', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 70%;
     height: 40px;
@@ -125,6 +163,8 @@ img {
 /* Style for the buttons on the website */
 
 #showtime-btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -137,6 +177,8 @@ img {
     padding: 10px;
     margin: 20px auto;
     font-family: 'Orbitron', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -166,10 +208,16 @@ footer p {
 
 /* Overall style of the game */
 .quiz-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100%;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .quiz-card {
@@ -177,23 +225,28 @@ footer p {
     max-width: 80%;
     padding: 10px;
     background-color: #fff;
-    box-shadow: 10px 10px 30px 0px;
+    -webkit-box-shadow: 10px 10px 30px 0px;
+            box-shadow: 10px 10px 30px 0px;
     margin: 30px auto;
 }
 
 /* Buttons additional styles */
 #control-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .btn-start {
     font-size: 40px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
     border: none;
 }
 
 #reset {
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
     border: none;
     font-size: 30px;
 }
@@ -211,8 +264,13 @@ footer p {
 }
 
 #answer {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 25px 10px 25px 20px;
     padding-left: 10px;
 }
@@ -235,14 +293,24 @@ input[type="radio"] {
 #score-tracking {
     width: 60%;
     margin: 5px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .score {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 #correct, #wrong {
@@ -303,7 +371,8 @@ input[type="radio"] {
     .game-rules {
         width: 95%;
         margin: 0;
-        box-shadow: 0px 1px 3px 0px;
+        -webkit-box-shadow: 0px 1px 3px 0px;
+                box-shadow: 0px 1px 3px 0px;
     }
 
     .game-rules h1 {
