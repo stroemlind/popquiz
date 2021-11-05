@@ -1,5 +1,6 @@
 /* jshint esversion: 8 */
 
+console.log(location.pathname);
 if (location.pathname === '/' || location.pathname == '/index.html') {
     /**The username registration form
      * called when the user registrer their username
@@ -14,7 +15,7 @@ if (location.pathname === '/' || location.pathname == '/index.html') {
  
         localStorage.setItem('username', this.querySelector('[name=username]').value);
  
-        window.location = '/popquiz/game.html';
+        window.location = '/game.html';
     }
  
     form.addEventListener('submit', addUser);
