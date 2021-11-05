@@ -11,7 +11,7 @@ Pop! is a quiz for anyone who wants to try their knowledge in pop music. How wel
 ## UX
 The quiz's theme is to simulate the pop trends of the late '90s and the early '00s, with a mix of bright colors and white.  When visiting the website, the user should get the happy, excited, and hopeful feelings pop music usually gives the listener.
 
-### Colour Scheme
+### Color Scheme
 The primary colors used for the website are:
 * Purple for Background hex: #DCABFF
 * Blue for Background hex: #8299FA 
@@ -58,21 +58,27 @@ The website also allows users to follow their Spotify playlist to get in the rig
 #### Username Form 
 The username Form allows and makes sure that the visitor creates a username before continuing forward to the game. 
 The Form has a section that provides quick information on what the quiz is about and its rules. 
+![Username-form](documentation/testing/username-input.png)
 
 #### Start Button for the quiz to show 
 This feature makes sure that the user can start the quiz whenever they are ready. The quiz's first question will not display until the user clicks on the button.
+![Start-Button](documentation/testing/chrome.png)
 
 #### Question Section with options 
 For every question, the user will get three options to choose from, and one of these is the correct one. The quiz requires the user to select an answer before moving on to the next question.
+![Questions-section](documentation/testing/unchecked-q.png)
 
 #### Score Tracking 
 After each submitted question, the Score Tracking system will increment a point to either the correct or wrong element, letting the user know right away if they answered a question correctly or not.
+![Score-tracking](documentation/testing/scoretracking.png)
 
 #### Result Section 
 Upon finishing the quiz, the user will receive a message with their chosen username on the quiz board, letting them know how many correct answers they got on the quiz game.
+![Result-section](documentation/testing/username-showresult.png)
 
 #### Button to reset the game 
 This button, when clicked, will reset the quiz for the user and take them to the start of the quiz game.
+![Reset-button](documentation/testing/reset.png)
  
 #### Social Media icons in the footer
 The Social Media icons will take the user to the directed site and application, in this case, Instagram and a Spotify playlist when clicked.
