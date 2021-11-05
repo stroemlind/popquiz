@@ -1,6 +1,5 @@
 /* jshint esversion: 8 */
 
-console.log(location.pathname);
 if (location.pathname === '/' || location.pathname == '/index.html') {
     /**The username registration form
      * called when the user registrer their username
@@ -91,7 +90,7 @@ if (location.pathname === '/' || location.pathname == '/index.html') {
         let answer = document.getElementsByName('answer');
         for (let i = 0; i < answer.length; i++) {
             if (answer[i].checked) {
-                if (quizCopy[randomNumber].answers[i].correct) {
+                if (quizCopy[randomNumber].answers[i].correct = true) {
                     incrementScore();
                 } else {
                     wrongScore();
