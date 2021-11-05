@@ -1,6 +1,6 @@
 # POP QUIZ!
 Pop! is a quiz for anyone who wants to try their knowledge in pop music. How well do you know an artist's discography or what year they released a specific song? This pop quiz will let you know.
--amiresponisive image
+![AmIResponsive](documentation/testing/amiresponsive.png)
 
 ## User Stories
 * Create a username
