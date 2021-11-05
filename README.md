@@ -127,12 +127,17 @@ No errors where found when going through the offical [Jshint validator](https://
 
 
 ### Browser Compatibility
-* Chrome
-    * a
-* FireFox 
-    * b
-* Explorer
-    * c
+* Google Chrome
+    * The website runs without any issues in the Google Chrome browser. 
+    ![Google-Chrome](documentation/testing/chrome.png)
+
+* Mozilla Firefox 
+    * The website runs without any issues in the Mozilla Firefox browser.
+    ![Mozilla-Firefox](documentation/testing/firefox-index.png)
+
+* Microsoft Edge
+    * The website runs without any issues in the Microsoft Edge browser
+    ![Microsoft-Edge](documentation/testing/edge.png)
 
 ### Responsiveness
 * Desktop
