@@ -23,8 +23,7 @@ const quizQuestion = [{
             text: 'Wolf', correct: false
         },
         {
-            text: 'Howl',
-            correct: true
+            text: 'Howl', correct: true
         }
     ],
 },
@@ -45,7 +44,7 @@ const quizQuestion = [{
     ],
 },
 {
-    question: 'On which album did Prince release the song “Let’s Go Crazy”?',
+    question: 'On which album did Prince release the song “Lets Go Crazy”?',
     answers: [{
             text: 'Parade',
             correct: false
@@ -61,7 +60,7 @@ const quizQuestion = [{
     ],
 },
 {
-    question: 'What’s the name of Harry Styles debut song?',
+    question: 'Whats the name of Harry Styles debut song?',
     answers: [{
             text: 'Sign of the Times',
             correct: true
@@ -167,7 +166,7 @@ const quizQuestion = [{
             correct: false
         },
         {
-            text: "It’s Gonna Be Me",
+            text: "Its Gonna Be Me",
             correct: true
         }
     ],

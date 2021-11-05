@@ -1,6 +1,6 @@
 /* jshint esversion: 8 */
 
-if (location.pathname === '/' || location.pathname == '/popquiz/index.html') {
+if (location.pathname === '/' || location.pathname == '/index.html') {
     /**The username registration form
      * called when the user registrer their username
      * and starts the game
@@ -14,7 +14,7 @@ if (location.pathname === '/' || location.pathname == '/popquiz/index.html') {
  
         localStorage.setItem('username', this.querySelector('[name=username]').value);
  
-        window.location = '/popquiz/game.html';
+        window.location = '/game.html';
     }
  
     form.addEventListener('submit', addUser);
@@ -36,7 +36,7 @@ if (location.pathname === '/' || location.pathname == '/popquiz/index.html') {
     let quizDiv = document.getElementById('quiz');
     let questionDiv = document.getElementById('question');
     let answerButtons = document.getElementById('answer');
-    let trackScore = document.getElementById('score-tracking');
+    //let trackScore = document.getElementById('score-tracking');
     let resultDiv = document.getElementById('result');
     let resetButton = document.getElementById('reset');
     let randomNumber;
@@ -63,6 +63,7 @@ if (location.pathname === '/' || location.pathname == '/popquiz/index.html') {
             }
         }
  
+        //Statement to only show 10 questions each game
         if (quizQuestion.length === 7) {
             submitButton.classList.remove('hide');
             nextButton.classList.add('hide');
@@ -95,6 +96,7 @@ if (location.pathname === '/' || location.pathname == '/popquiz/index.html') {
                 } else {
                     wrongScore();
                 }
+                console.log(` Answer ${i} is checked = ${answer[i].checked} `)
                 quizCopy.splice(randomNumber, 1);
             }
         }
