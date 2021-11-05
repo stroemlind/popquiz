@@ -96,20 +96,34 @@ These are the following technologies used to develop this project:
 ## Testing
 ### Code Validation
 * HTML
-    * Validation
+I am aware of the warnings for the game.html about the aria-labels as hidden. That is only until the game starts when the start button is getting called.
+ * Link to the offical [W3C Validatior]() for the index.html 
+    ![Index-validation](documentation/testing/html-vali-index.png)
+
+ * Link to offical [W3C Validatior]() for the game.html
+    [W3C Validatior]() ![Game-validation](documentation/testing/html-vali-game.png)
 
 * CSS
-    * Validation
+There are no errors form the offical [Jigsaw validator]()
+    ![Css-validation](documentation/testing/css-validation.png)
 
 * JavaScript
-    * Validation
+No errors where found when going through the offical [Jshint validator](https://jshint.com/). I am aware of the eight warnings about functions declerations in block. 
+ * There are 10 functions in this file
+ * Function with the largest signature take 1 arguments, while the median is 0
+ * Largest function has 16 statements in it, while the median is 3
+ * The most complex function has a cyclomatic complexity value of 5 while the median is 1
+
+    ![script.js](documentation/testing/script-validation.png)
+    ![question.js](documentation/testing/question-validation.png)
+
 
 ### Browser Compatibility
 * Chrome
     * a
 * FireFox 
     * b
-* Safari
+* Explorer
     * c
 
 ### Responsiveness
