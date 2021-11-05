@@ -104,15 +104,15 @@ These are the following technologies used to develop this project:
 ## Testing
 ### Code Validation
 * HTML
-I am aware of the warnings for the game.html about the aria-labels as hidden. That is only until the game starts when the start button is getting called.
- * Link to the offical [W3C Validatior]() for the index.html 
+I am aware of the warnings for the game.html about the <label>'s as hidden. That is only until the game starts when the start button is getting called.
+ * Link to the offical [W3C Validatior](https://validator.w3.org/nu/?doc=https%3A%2F%2Fstroemlind.github.io%2Fpopquiz%2Findex.html) for the index.html 
     ![Index-validation](documentation/testing/html-vali-index.png)
 
- * Link to offical [W3C Validatior]() for the game.html
-    [W3C Validatior]() ![Game-validation](documentation/testing/html-vali-game.png)
+ * Link to offical [W3C Validatior](https://validator.w3.org/nu/?doc=https://stroemlind.github.io/popquiz/game.html) for the game.html
+    ![Game-validation](documentation/testing/html-vali-game.png)
 
 * CSS
-There are no errors form the offical [Jigsaw validator]()
+There are no errors form the offical [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fstroemlind.github.io%2Fpopquiz&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
     ![Css-validation](documentation/testing/css-validation.png)
 
 * JavaScript
