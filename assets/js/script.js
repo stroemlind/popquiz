@@ -37,7 +37,6 @@ if (location.pathname === '/popquiz/' || location.pathname === '/popquiz/index.h
     let questionDiv = document.getElementById('question');
     let answerButtons = document.getElementById('answer');
     let answers = document.querySelectorAll("input[name='answer']");
-    // let trackScore = document.getElementById('score-tracking');
     let resultDiv = document.getElementById('result');
     let resetButton = document.getElementById('reset');
     let randomNumber;
