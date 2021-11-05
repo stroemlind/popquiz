@@ -14,7 +14,7 @@ if (location.pathname === '/popquiz/' || location.pathname === '/popquiz/index.h
  
         localStorage.setItem('username', this.querySelector('[name=username]').value);
  
-        window.location = '/game.html';
+        window.location = '/popquiz/game.html';
     }
  
     form.addEventListener('submit', addUser);
