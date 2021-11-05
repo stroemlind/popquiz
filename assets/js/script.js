@@ -1,6 +1,6 @@
 /* jshint esversion: 8 */
 
-if (location.pathname === '/' || location.pathname == '/index.html') {
+if (location.pathname === '/' || location.pathname == '/popquiz/index.html') {
     /**The username registration form
      * called when the user registrer their username
      * and starts the game
@@ -14,7 +14,7 @@ if (location.pathname === '/' || location.pathname == '/index.html') {
  
         localStorage.setItem('username', this.querySelector('[name=username]').value);
  
-        window.location = '/game.html';
+        window.location = '/popquiz/game.html';
     }
  
     form.addEventListener('submit', addUser);
@@ -90,7 +90,7 @@ if (location.pathname === '/' || location.pathname == '/index.html') {
         let answer = document.getElementsByName('answer');
         for (let i = 0; i < answer.length; i++) {
             if (answer[i].checked) {
-                if (quizCopy[randomNumber].answers[i].correct = true) {
+                if (quizCopy[randomNumber].answers[i].correct) {
                     incrementScore();
                 } else {
                     wrongScore();
