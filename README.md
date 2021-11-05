@@ -69,7 +69,7 @@ For every question, the user will get three options to choose from, and one of t
 ![Questions-section](documentation/testing/unchecked-q.png)
 
 #### Score Tracking 
-After each submitted question, the Score Tracking system will increment a point to either the correct or wrong element, letting the user know right away if they answered a question correctly or not.
+When a user submits an answer, they can keep track of their score and if the answers they submitted are correct or wrong. For each answer, they will get one point. The code doesn't show which answers are correct if the user would like to retake the quiz. 
 ![Score-tracking](documentation/testing/scoretracking.png)
 
 #### Result Section 
@@ -163,10 +163,18 @@ The responsiveness for the website works accordingly throughout the whole quiz g
 
 ### Tested User Stories
 #### Create a username
+The user has to submit a username before they can begin the game. If they do not, an alert will notify them to pass in a username, and the "Showtime!" button will not execute the following functions.
+![Username-input](documentation/testing/username-input.png)
+![Alert-username](documentation/testing/firefox-index.png)
 
 #### Scoretracking system
+After each submitted question, the Score Tracking system will increment a point to either the correct or wrong element, letting the user know right away if they answered a question correctly or not.
+
+![Score-tracking](documentation/testing/scoretracking.png)
 
 #### Get feedback about the result after the quiz is done
+When the last question is submitted, the user's username shows in the result section and the total number of correct answers. The user can see how many of the questions were correct and incorrect answered.
+![Result-feedback](documentation/testing/result-test.jpg)
 
 #### Relevent Social Media Icons
 When a user clicks on the Social Media Icons in the footer, the link related to the footer opens in a new tab.
