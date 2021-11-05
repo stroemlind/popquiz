@@ -1,6 +1,6 @@
 /* jshint esversion: 8 */
-console.log(location.pathname);
-if (location.pathname === '/' || location.pathname == '/index.html') {
+
+if (location.pathname === '/popquiz/' || location.pathname === '/popquiz/index.html') {
     /**The username registration form
      * called when the user registrer their username
      * and starts the game
