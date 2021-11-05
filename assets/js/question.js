@@ -4,26 +4,32 @@
 const quizQuestion = [{
     question: 'Who is the hit-making producer behind Britney Spears song “... Baby One More Time”?',
     answers: [{
-            text: 'Max Martin', correct: true
+            text: 'Max Martin', 
+            correct: true
         },
         {
-            text: 'Rick Rubin', correct: false
+            text: 'Rick Rubin', 
+            correct: false
         },
         {
-            text: 'Mark Ronson', correct: false
+            text: 'Mark Ronson', 
+            correct: false
         }
     ],
 },
 {
     question: 'Which of the following songs is not a song released by the group EXO?',
     answers: [{
-            text: 'Growl', correct: false
+            text: 'Growl', 
+            correct: false
         },
         {
-            text: 'Wolf', correct: false
+            text: 'Wolf', 
+            correct: false
         },
         {
-            text: 'Howl', correct: true
+            text: 'Howl', 
+            correct: true
         }
     ],
 },
