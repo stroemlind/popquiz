@@ -102,6 +102,15 @@ These are the following technologies used to develop this project:
 * Auto Prefixer: Auto Prefixer is an application used at the end of the project to give the CSS code some extra properties when used on different browsers.
 
 ## Testing
+For testing, there was always a tab open with the website preview through Gitpod port 8000. To check up on my code and see if it worked as I wanted. 
+I used DevTools to see how the code would respond if I added or changed properties or values with CSS. I also took help from DevTools to check the responsiveness when decreasing or increasing the screen size. Another tool used during development and testing was Unicorn Revealer, which helped me see if any content was outside its container.
+To see and test the website's performance, I used Lighthouse, which gave me an updated report to see how well my accessibility was for the website. The last test results were these:
+![Lighthouse](documentation/testing/lighthouse.png)
+
+While developing the javaScript code, I used the console section of DevTools to see console.logs in the code if errors occurred with reading the code and debugging the issues. 
+The console.logs in the code helped me understand more about the process of debugging problems that occurred and understand how to develop the code.
+I used the devTools application section to test if the code for localStorage worked as it should.
+
 ### Code Validation
 * HTML
 I am aware of the warnings for the game.html about the <label>'s as hidden. That is only until the game starts when the start button is getting called.
