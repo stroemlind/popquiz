@@ -113,6 +113,8 @@ While developing the javaScript code, I used the console section of DevTools to 
 The console.logs in the code helped me understand more about the process of debugging problems that occurred and understand how to develop the code.
 I used the devTools application section to test if the code for localStorage worked as it should.
 
+Several internet browsers, like Chrome, Mozilla Firefox, Microsoft Edge, and Safari, were used during all the testing. It works on all the mentioned internet browsers as well as on mobile devices as well.
+
 ### Code Validation
 * HTML
 I am aware of the warnings for the game.html about the <label>'s as hidden. That is only until the game starts when the start button is getting called.
