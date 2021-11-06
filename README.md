@@ -264,6 +264,6 @@ Alternatively, if using Gitpod, you can [click here](https://gitpod.io/#https://
 
 ### Acknowledgements
 I want to give acknowledgments to my mentor Tim Nelson and my friend Johan. They have helped me a lot and provided extraordinary support during this project. 
-Tim has been a great mentor and support. I want to acknowledge that he helped me with the if-else statement for which functions and statements should run depending on which page the user is on. He gave me the information about localStorage and how to implement it in my code. Tim also helped me rewrite the code for the pickQuestion and checkAnswer functions from line 56 to 112 in the script.js file when significant bugs occurred. 
+Tim has been a great mentor and support. I want to acknowledge that he helped me with the if-else statement for which functions and statements should run depending on which page the user is on. He gave me the information about localStorage and how to implement it in my code. Tim also helped me with recommending to rewrite the code for the pickQuestion and checkAnswer functions for refactoring the code.
 My friend Johan helped me at the beginning of the development process with support and feedback on my code. 
 I want to give credit and acknoledgment to everyone who tooke their time help me from the Slack Community. 
