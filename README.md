@@ -139,16 +139,20 @@ No errors where found when going through the offical [Jshint validator](https://
 
 ### Browser Compatibility
 * Google Chrome
-    * The website runs without any issues in the Google Chrome browser. 
+    * The website runs without any issues in the Google Chrome browser 
     ![Google-Chrome](documentation/testing/chrome.png)
 
 * Mozilla Firefox 
-    * The website runs without any issues in the Mozilla Firefox browser.
+    * The website runs without any issues in the Mozilla Firefox browser
     ![Mozilla-Firefox](documentation/testing/firefox-index.png)
 
 * Microsoft Edge
     * The website runs without any issues in the Microsoft Edge browser
     ![Microsoft-Edge](documentation/testing/edge.png)
+
+* Safari 
+    * The website runs without any issues in the Safari browser
+    ![Safari](documentation/testing/safari.png)
 
 ### Responsiveness
 The responsiveness for the website works accordingly throughout the whole quiz game process. See pictures below for every step taken.
