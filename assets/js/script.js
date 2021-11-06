@@ -32,15 +32,15 @@ if (location.pathname === '/popquiz/' || location.pathname === '/popquiz/index.h
     let startButton = document.getElementById('start-button');
     let nextButton = document.getElementById('submitQuiz');
     let submitButton = document.getElementById('done');
-    let controlButtons = document.getElementById('control-btns');
-    let quizDiv = document.getElementById('quiz');
-    let questionDiv = document.getElementById('question');
-    let answerButtons = document.getElementById('answer');
+    //let controlButtons = document.getElementById('control-btns');
+    //let quizDiv = document.getElementById('quiz');
+    //let questionDiv = document.getElementById('question');
+    //let answerButtons = document.getElementById('answer');
     let answers = document.querySelectorAll("input[name='answer']");
-    let resultDiv = document.getElementById('result');
+    //let resultDiv = document.getElementById('result');
     let resetButton = document.getElementById('reset');
     let randomNumber;
-    let usedQuestions = [];
+    //let usedQuestions = [];
 
     let quizCopy = quizQuestion.slice();
 
