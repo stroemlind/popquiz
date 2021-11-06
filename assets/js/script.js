@@ -44,6 +44,8 @@ if (location.pathname === '/popquiz/' || location.pathname === '/popquiz/index.h
 
     let quizCopy = quizQuestion.slice();
 
+    document.getElementById("answer").classList.add('hide');
+
     // Game buttons calling event
     startButton.addEventListener('click', goGame);
     nextButton.addEventListener('click', checkAnswer);
@@ -147,7 +149,8 @@ if (location.pathname === '/popquiz/' || location.pathname === '/popquiz/index.h
 
     // Starts the game
     function goGame() {
-        answerButtons.classList.remove('hide');
+        document.getElementById("answer").classList.remove('hide');
+        //answerButtons.classList.remove('hide');
         startButton.classList.add('hide');
         nextButton.classList.remove('hide');
         pickQuestion();
