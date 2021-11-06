@@ -32,15 +32,9 @@ if (location.pathname === '/popquiz/' || location.pathname === '/popquiz/index.h
     let startButton = document.getElementById('start-button');
     let nextButton = document.getElementById('submitQuiz');
     let submitButton = document.getElementById('done');
-    //let controlButtons = document.getElementById('control-btns');
-    //let quizDiv = document.getElementById('quiz');
-    //let questionDiv = document.getElementById('question');
-    //let answerButtons = document.getElementById('answer');
     let answers = document.querySelectorAll("input[name='answer']");
-    //let resultDiv = document.getElementById('result');
     let resetButton = document.getElementById('reset');
     let randomNumber;
-    //let usedQuestions = [];
 
     let quizCopy = quizQuestion.slice();
 
@@ -96,7 +90,6 @@ if (location.pathname === '/popquiz/' || location.pathname === '/popquiz/index.h
             document.querySelector("input[value='a2']").classList.add(quizQuestion[randomNumber].answers[1].correct);
             document.querySelector("input[value='a3']").classList.add(quizQuestion[randomNumber].answers[2].correct);
 
-            //usedQuestions.push(quizQuestion[randomNumber]); //For Safari testing
             quizQuestion.splice(randomNumber, 1);
         }
     }
@@ -122,12 +115,14 @@ if (location.pathname === '/popquiz/' || location.pathname === '/popquiz/index.h
 
     // Score tracking
     // Code taken from Code Institute Love Math Project
+    //Increments the score in the correct element
     function incrementScore() {
         let oldScore = parseInt(document.getElementById('correct').innerText);
         document.getElementById('correct').innerText = ++oldScore;
         pickQuestion();
     }
 
+    //Increments the score in the wrong element
     function wrongScore() {
         let oldScore = parseInt(document.getElementById('wrong').innerText);
         document.getElementById('wrong').innerText = ++oldScore;
@@ -137,17 +132,11 @@ if (location.pathname === '/popquiz/' || location.pathname === '/popquiz/index.h
     // When all questions has been answered
     function endGame() {
         // Add and remove class hide to only show user result
-        /*quizDiv.classList.add('hide');
-        questionDiv.classList.add('hide');
-        answerButtons.classList.add('hide');
-        controlButtons.classList.add('hide');
-        resultDiv.classList.remove('hide');*/
-
-        document.getElementById('quiz').classList.add('hide'); //Added for Safari Browser
-        document.getElementById('question').classList.add('hide'); //Added for Safari Browser
-        document.getElementById('answer').classList.add('hide'); //Added for Safari Browser
-        document.getElementById('control-btns').classList.add('hide'); //Added for Safari Browser
-        document.getElementById('result').classList.remove('hide'); //Added for Safari Browser
+        document.getElementById('quiz').classList.add('hide');
+        document.getElementById('question').classList.add('hide');
+        document.getElementById('answer').classList.add('hide'); 
+        document.getElementById('control-btns').classList.add('hide'); 
+        document.getElementById('result').classList.remove('hide'); 
 
 
         // Get the users correct answered score and show with username
@@ -164,10 +153,7 @@ if (location.pathname === '/popquiz/' || location.pathname === '/popquiz/index.h
     // Starts the game
     function goGame() {
         document.getElementById("answer").classList.remove('hide');
-        //answerButtons.classList.remove('hide');
-        //startButton.classList.add('hide');
         document.getElementById('start-button').classList.add('hide');
-        //nextButton.classList.remove('hide');
         document.getElementById('submitQuiz').classList.remove('hide');
         pickQuestion();
     }
