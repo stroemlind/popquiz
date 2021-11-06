@@ -25,8 +25,13 @@ The primary colors used for the website are:
 To get the proper background color gradient, I used the [ColorSpace](https://mycolor.space/gradient3?ori=to+right+top&hex=%23DCABFF&hex2=%238299FA&hex3=%235FFDF5&submit=submit) 3-color-gradient generator. The color to get this background are the purple and blue listed above. 
 
 The orange(#DA4500) and the blue(#350EA0) colors used are to style the buttons on the website. When a user hovers over a button, it changes the color to orange. By doing so, the user gets an indication if they are near a button.
-* button ![Button](documentation/images/button-noh.png) 
-* button with hover effect ![Button:hover](documentation/images/button-hover.png)
+* button:
+
+    ![Button](documentation/images/button-noh.png) 
+
+* button with hover effect: 
+
+    ![Button:hover](documentation/images/button-hover.png)
 
 ### Typography (explain any fonts and icon libraries used, font-awesome/google fonts, etc)
 The font and icon styles have a digital-futuristic and smooth characteristic feel to them.
@@ -83,6 +88,7 @@ This button, when clicked, will reset the quiz for the user and take them to the
 #### Social Media icons in the footer
 The Social Media icons will take the user to the directed site and application, in this case, Instagram and a Spotify playlist when clicked.
 * Footer Icons: Spotify and Instagram
+
 ![Footer Icons](documentation/testing/icons-footer.png)
 
 ### Features Left to Implement
