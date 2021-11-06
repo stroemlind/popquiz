@@ -88,6 +88,7 @@ The Social Media icons will take the user to the directed site and application, 
 ### Features Left to Implement
 * A scoreboard to show players with the highest score of the quiz. 
 * The user would get the option to choose the degree of difficulty of the quiz, like easy, medium, pro.
+* A question tracker, so the user knows which question they are answering at that moment.
 
 ## Technologies Used
 These are the following technologies used to develop this project: 
