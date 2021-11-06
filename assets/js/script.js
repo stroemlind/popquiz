@@ -151,8 +151,10 @@ if (location.pathname === '/popquiz/' || location.pathname === '/popquiz/index.h
     function goGame() {
         document.getElementById("answer").classList.remove('hide');
         //answerButtons.classList.remove('hide');
-        startButton.classList.add('hide');
-        nextButton.classList.remove('hide');
+        //startButton.classList.add('hide');
+        document.getElementById('start-button').classList.add('hide');
+        //nextButton.classList.remove('hide');
+        document.getElementById('submitQuiz').classList.remove('hide');
         pickQuestion();
     }
 }
