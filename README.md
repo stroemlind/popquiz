@@ -135,7 +135,7 @@ No errors where found when going through the offical [Jshint validator](https://
  * Largest function has 18 statements in it, while the median is 3.
  * The most complex function has a cyclomatic complexity value of 5 while the median is 1.
 
-    ![script.js](documentation/testing/script-validation.png)
+    ![script.js](documentation/testing/jshint-script.png)
     ![question.js](documentation/testing/question-validation.png)
 
 
