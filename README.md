@@ -207,7 +207,7 @@ During testing, the website did not work as expected in the Safari browser or on
 I had to put the variables directly in the function and get them by element Id and, in some cases, add the assigned classList to them. 
 During the debugging process to solve the issues, I found out that I could remove some of the variables that the code needed in the first place. 
 
-I am aware that the code can be improved to work better with different internet browsers. When playing the quiz in Mozilla Firefox, the start section sometimes loads slower, which leads to the user seeing the browser hiding some of the elements, like the answer buttons. It is not that noticeable but, they can see something loading on the page before the start button appears.
+I am aware that the code can be improved to work better with different internet browsers. When playing the quiz, the start section sometimes loads slower, which leads to the user seeing the browser hiding some of the elements, like the answer buttons. It is not that noticeable but, they can see something loading on the page before the start button appears.
 
 ## Deployment
 The site was deployed to GitHub pages. The steps to deploy are as follows:
