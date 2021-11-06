@@ -100,6 +100,7 @@ These are the following technologies used to develop this project:
 * Git: Git is used to create backups of the project and ensure that all versions of the project is pushed to GitHub 
 * DevTools: Dev Tools is used to look over the development of the website, debugging problems, and try different approaches to issues that would occur during the process. 
 * Auto Prefixer: Auto Prefixer is an application used at the end of the project to give the CSS code some extra properties when used on different browsers.
+* Unicorn Revealer: Unicorn Revealer is used to find bugs on the websites responsiveness and to see how the CSS properties for the website worked.
 
 ## Testing
 For testing, there was always a tab open with the website preview through Gitpod port 8000. To check up on my code and see if it worked as I wanted. 
@@ -226,7 +227,7 @@ Alternatively, if using Gitpod, you can [click here](https://gitpod.io/#https://
     * [YouTube-video](https://www.youtube.com/watch?v=riDzcEQbX6k)
     * [Sitepoint](https://www.sitepoint.com/simple-javascript-quiz/)
     * [Simplestepscode](https://simplestepscode.com/javascript-quiz-tutorial/)
-* The information about localStorage was given by Tim Nelson and through his youtube clip [Wes Bos](https://www.youtube.com/watch?v=YL1F4dCUlLc)
+* The information about localStorage was given by Tim Nelson and through his youtube clip [Wes Bos](https://www.youtube.com/watch?v=YL1F4dCUlLc) 
 
 #### Questions
 * [EXO](https://en.wikipedia.org/wiki/Exo) / [Spotify](https://open.spotify.com/artist/3cjEqqelV9zb4BYE3qDQ4O?si=5djMFLjESiuD3W4UIQ7XXw)
