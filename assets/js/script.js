@@ -57,7 +57,8 @@ if (location.pathname === '/popquiz/' || location.pathname === '/popquiz/index.h
     // Picks a random question everytime someone starts the game
     function pickQuestion() {
 
-        answers = document.querySelectorAll("input[name='answer']"); //Added for Safari
+        answers = document.querySelectorAll("input[name='answer']"); //Added for Safari browser
+
         // Unchecks radio input when going to the next question
         answers.forEach(answer => {
             // remove the previous true/false answer classes
@@ -67,8 +68,8 @@ if (location.pathname === '/popquiz/' || location.pathname === '/popquiz/index.h
             }
         });
 
-        nextButton = document.getElementById('submitQuiz'); //Added for safari
-        submitButton = document.getElementById('done'); //Added for safari
+        nextButton = document.getElementById('submitQuiz'); //Added for safari browser
+        submitButton = document.getElementById('done'); //Added for safari browser
 
         //Statement to only show 10 questions each game
         if (quizQuestion.length === 7) {
@@ -95,7 +96,7 @@ if (location.pathname === '/popquiz/' || location.pathname === '/popquiz/index.h
             document.querySelector("input[value='a2']").classList.add(quizQuestion[randomNumber].answers[1].correct);
             document.querySelector("input[value='a3']").classList.add(quizQuestion[randomNumber].answers[2].correct);
 
-            usedQuestions.push(quizQuestion[randomNumber]);
+            //usedQuestions.push(quizQuestion[randomNumber]); //For Safari testing
             quizQuestion.splice(randomNumber, 1);
         }
     }
