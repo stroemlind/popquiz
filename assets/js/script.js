@@ -102,6 +102,8 @@ if (location.pathname === '/popquiz/' || location.pathname === '/popquiz/index.h
     }
 
     //Checks if the answer is correct or incorrect
+
+    quizCopy = quizQuestion.slice(); //Added for Safari Browser
     function checkAnswer() {
         answers.forEach(answer => {
             // check if the radio button is "checked"
@@ -135,11 +137,18 @@ if (location.pathname === '/popquiz/' || location.pathname === '/popquiz/index.h
     // When all questions has been answered
     function endGame() {
         // Add and remove class hide to only show user result
-        quizDiv.classList.add('hide');
+        /*quizDiv.classList.add('hide');
         questionDiv.classList.add('hide');
         answerButtons.classList.add('hide');
         controlButtons.classList.add('hide');
-        resultDiv.classList.remove('hide');
+        resultDiv.classList.remove('hide');*/
+
+        document.getElementById('quiz').classList.add('hide'); //Added for Safari Browser
+        document.getElementById('question').classList.add('hide'); //Added for Safari Browser
+        document.getElementById('answer').classList.add('hide'); //Added for Safari Browser
+        document.getElementById('control-btns').classList.add('hide'); //Added for Safari Browser
+        document.getElementById('result').classList.remove('hide'); //Added for Safari Browser
+
 
         // Get the users correct answered score and show with username
         let yourResult = document.getElementById('your-score');
