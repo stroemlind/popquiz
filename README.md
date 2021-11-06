@@ -173,7 +173,7 @@ After each submitted question, the Score Tracking system will increment a point 
 ![Score-tracking](documentation/testing/scoretracking.png)
 
 #### Get feedback about the result after the quiz is done
-When the last question is submitted, the user's username shows in the result section and the total number of correct answers. The user can see how many of the questions were correct and incorrect answered.
+When the last question is submitted, the user's username and the total of correct answers show in the result section. The user can see how many of the questions were correct and incorrect answered.
 ![Result-feedback](documentation/testing/result-test.jpg)
 
 #### Relevent Social Media Icons
