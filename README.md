@@ -223,7 +223,9 @@ In order to make a local copy of this project, you can type the following into y
 
 - `git clone https://github.com/stroemlind/popquiz.git`
 
-Alternatively, if using Gitpod, you can [click here](https://gitpod.io/#https://github.com/stroemlind/popquiz), and it will create a brand new workspace on your own Gitpod account.
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/stroemlind/popquiz)
 
 ## Credits
 ### Content
