@@ -103,6 +103,9 @@ These are the following technologies used to develop this project:
 * Auto Prefixer: Auto Prefixer is an application used at the end of the project to give the CSS code some extra properties when used on different browsers.
 * Unicorn Revealer: Unicorn Revealer is used to find bugs on the websites responsiveness and to see how the CSS properties for the website worked.
 
+## Testing
+To view all tests for this project, please refer to the [TESTING.md](TESTING.md) file.
+
 ## Deployment
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 
